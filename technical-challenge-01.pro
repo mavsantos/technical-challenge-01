@@ -1,4 +1,4 @@
-QT += quick
+QT += quick dbus
 
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -6,7 +6,8 @@ QT += quick
 
 SOURCES += \
         main.cpp \
-        src/fileloader.cpp
+        src/fileloader.cpp \
+        src/ipcinterface.cpp
 
 RESOURCES += qml.qrc
 
@@ -22,4 +23,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    src/fileloader.h
+    src/fileloader.h \
+    src/ipcinterface.h

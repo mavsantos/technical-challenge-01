@@ -2,7 +2,6 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Dialogs 1.3
 
-
 Rectangle {
     id: fileLoaderScreen
     color: "#1E1E1E"
@@ -47,9 +46,7 @@ Rectangle {
                 }
             }
         }
-
     }
-
     FileDialog{
         id: fileDialog
         folder: fileLoader.getHomePath()
@@ -59,5 +56,4 @@ Rectangle {
             textArea.placeholderText = fileLoader.getFileContent()
         }
     }
-
 }

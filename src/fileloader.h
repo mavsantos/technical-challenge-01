@@ -5,7 +5,6 @@
 #include <QStandardPaths>
 #include <QtCore>
 
-
 class FileLoader : public QObject
 {
     Q_OBJECT
@@ -20,6 +19,7 @@ private:
     QString m_openedFileContent;
 
 signals:
+    void fileOpenedSuccessfully();
 };
 
 #endif // FILELOADER_H

@@ -7,7 +7,7 @@ Window {
     height: 800
     visible: true
     title: qsTr("Hello World")
-    FileLoaderScreen{
+    IpcScreen{
         anchors.fill: parent
     }
 }

@@ -2,6 +2,7 @@
 #include <QQmlContext>
 #include <QQmlApplicationEngine>
 #include "src/fileloader.h"
+#include "src/ipcinterface.h"
 
 int main(int argc, char *argv[])
 {
@@ -12,7 +13,9 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
     FileLoader fileLoader;
+    IpcInterface ipcInterface;
     engine.rootContext()->setContextProperty("fileLoader", &fileLoader);
+    engine.rootContext()->setContextProperty("ipcInterface", &ipcInterface);
 
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(

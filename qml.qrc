@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>qml/FileLoaderScreen.qml</file>
+        <file>qml/IpcScreen.qml</file>
     </qresource>
 </RCC>
