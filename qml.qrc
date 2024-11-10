@@ -3,5 +3,6 @@
         <file>main.qml</file>
         <file>qml/FileLoaderScreen.qml</file>
         <file>qml/IpcScreen.qml</file>
+        <file>qml/HomeScreen.qml</file>
     </qresource>
 </RCC>

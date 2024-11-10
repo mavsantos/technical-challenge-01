@@ -2,12 +2,37 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 
 Rectangle {
-    id: fileLoaderScreen
+    id: ipcScreen
     color: "#1E1E1E"
+
+    property StackView stack
+
     Column {
         id: layoutColumn
         anchors.fill: parent
         spacing: parent.height * 0.025
+        Item {
+            width: parent.width
+            height: parent.height * 0.025
+        }
+        Button {
+            width: parent.width * 0.1667
+            height: parent.height * 0.05
+            anchors.left: view.left
+            text: "Voltar"
+            background: Rectangle {
+                color: "#444444"
+                radius: 20
+            }
+            contentItem: Text {
+                text: parent.text
+                color: "white"
+                horizontalAlignment: Text.AlignHCenter
+                font.pixelSize: 20
+                font.bold: true
+            }
+            onClicked: stack.pop(null)
+        }
         Text {
             text: "Tópico:"
             color: "white"
@@ -37,7 +62,7 @@ Rectangle {
         ScrollView {
             id: view
             width: parent.width * 0.9
-            height: parent.height * 0.7
+            height: parent.height * 0.6
             anchors.horizontalCenter: parent.horizontalCenter
             clip: true
             TextArea {
