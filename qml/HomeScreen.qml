@@ -67,7 +67,7 @@ Rectangle {
                 font.pixelSize: 40
                 font.bold: true
             }
-            onClicked: stackView.push(ipcSreenComponent)
+            onClicked: Qt.quit()
         }
     }
     Component {

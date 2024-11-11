@@ -7,7 +7,7 @@ Window {
     width: 1280
     height: 800
     visible: true
-    title: qsTr("Hello World")
+    title: qsTr("Techinical Challenge 01")
 
     StackView {
         id: stack

@@ -69,6 +69,7 @@ Rectangle {
                 placeholderText: ""
                 readOnly: true
                 clip: true
+                wrapMode: TextEdit.WrapAnywhere
                 background: Rectangle {
                     radius: 20
                     color: "#303030"
